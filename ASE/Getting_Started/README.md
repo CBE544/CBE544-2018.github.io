@@ -147,7 +147,7 @@ From the plot, and your understanding of concepts in DFT, suggest your pick for 
 <a name='optimization'></a>
 
 #### Optimization ####
-Finally, you will be performing a geometry optimization on the (001) BO2-terminated surface of SrTiO<sub>3</sub>. To proceed with this exercise, first take a look at the starting structure `001-bo2-sto.traj` in the `relax` folder by using the GUI. You should see a 2x2x4 surface of SrTiO<sub>3</sub>, with the bottom two layers fixed to the bulk positions. Next, take a look at the `relax.py` discussed previously. You will be using this script for running the surface optimization calculations. Before submitting the job, please modify the following lines (in addition to the script to run) in the `spede_esp.sub` file:
+Finally, you will be performing a geometry optimization on the (001) BO2-terminated surface of SrTiO<sub>3</sub>. To proceed with this exercise, first take a look at the starting structure `001-bo2-sto.traj` in the `relax` folder by using the GUI. You should see a 2x2x4 surface of SrTiO<sub>3</sub>, with the bottom two layers fixed to the bulk positions. Next, take a look at the `relax.py` script discussed previously. You will be using this script for running the surface optimization calculations. Before submitting the job, please modify the following lines (in addition to the script to run) in the `spede_esp.sub` file:
 
 ```bash
 #SBATCH -p normal #queue type
