@@ -167,5 +167,6 @@ BFGSLineSearch:   5[  7]  17:02:23   -60933.626425       0.1151
 The optimization step is printed in the first column, the wall clock time in the second, total energy (in eV) in the third, and the forces (in eV/Å) in the fourth and final column. Report the converged energy once the job finishes. Note that the forces should have converged to a value less than the cut-off specified in the `relax.py` script. 
 
 **HW 5:** Report the converged energy of the optimized structure. 
+
 **You must succesfully complete this task before proceeding to the Final Project**
 
