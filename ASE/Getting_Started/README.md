@@ -133,7 +133,7 @@ python xyz.py
 ```
 The output plot (`xyz.png`) should show the fitted energies as a function of the lattice volumes, with the volume corresponding to the minimum and the bulk modulus displayed on the top. Use this, and the fact that we have a cubic lattice to determine the DFT lattice constant.
 
-**HW 5:** Plot the Equation of State fit, and report the DFT lattice constant.
+**HW 5:** Show your Python script, Plot the Equation of State fit, and report the DFT lattice constant.
 
 <a name='convergence-with-k-points'></a>
 
