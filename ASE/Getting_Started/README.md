@@ -58,7 +58,7 @@ python lattice.py    #Python script to run
 Finally, the last line ```python lattice.py``` picks the script you want to run. Therefore, you need to change the name of the file depending on which script you are running. We will be using this script later in this section for performing calculations to compute the lattice constant of bulk SrTiO<sub>3</sub> perovskite.
 
 
-Let's look at how a typical ASE script for geometry optimization is written. Open the `relax.py` script, which will be used in a later section to perform a simple optimiaation on a (001) SrTiO<sub>3</sub> slab . We import all the relevant ASE modules in for this calculation
+Let's look at how a typical ASE script for geometry optimization is written. Open the `relax.py` script, which will be used in a later section to perform a simple optimization on a (001) SrTiO<sub>3</sub> slab . We import all the relevant ASE modules in for this calculation
 
 ```python
 from ase import io
