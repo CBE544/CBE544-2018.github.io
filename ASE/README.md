@@ -51,7 +51,7 @@ As mentioned above, you can use the graphical user interface to view atomic stru
 Log on to Stampede2, download an example and take a look:
 
 ```bash
-wget https://cbe544.github.io/CBE544-2018.github.io/ASE/sto.traj
+wget https://cbe544.github.io/CBE544-2018.github.io/ASE/slab.traj
 ase-gui sto.traj
 ```
 
