@@ -52,7 +52,7 @@ Log on to Stampede2, download an example and take a look:
 
 ```bash
 wget https://cbe544.github.io/CBE544-2018.github.io/ASE/slab.traj
-ase-gui sto.traj
+ase-gui slab.traj
 ```
 
 You should see the following window:
