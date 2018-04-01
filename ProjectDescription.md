@@ -33,25 +33,27 @@ To illustrate the idea of a regenerative 'intelligent' catalytic system, a simpl
 <center><img src="/Images/Regen-catalyst-image.jpg" alt="regen" style="width: 450px;"/>
 <br> Self-regenerating 'intelligent' catalyst (<a href="https://www.sciencedirect.com/science/article/pii/S0920586106002719">Tanaka et. al. (2006)</a>)</center>
 
-Current research has foused on trying to understand the mechanism behind the exsolution process, and also develop broader trends in identifying suitable transition metal-host perovksite combinations. Some of the proposed mechanisms include su-surface nucleation of metal nanoparticles followed by segregation [Tae-Sik Oh et.al. (2015)](https://pubs.acs.org/doi/full/10.1021/acs.jpclett.5b02292) or surface segregation followed by sintering and particle growth [Katz et.al. (2011)](https://pubs.acs.org/doi/abs/10.1021/ja2082284). The two schemes are illustrated below:
+
+Current research has foused on trying to understand the mechanism behind the exsolution process, and also develop broader trends in identifying suitable transition metal-host perovksite combinations. Some of the proposed mechanisms include sub-surface nucleation of metal nanoparticles followed by segregation ([Tae-Sik Oh et.al. (2015)](https://pubs.acs.org/doi/full/10.1021/acs.jpclett.5b02292)) or surface segregation followed by sintering and particle growth ([Katz et.al. (2011)](https://pubs.acs.org/doi/abs/10.1021/ja2082284)). The two schemes are illustrated below:
 
 <center><img src="/Images/mechanism.png" alt="mechanism" style="width: 400px;"/>
 <br> Possible mechanisms for exsolution </center>
 
-We will be exploring 2D MXenes where such configurations might be found. 
+
+In this project, you will be exploring the segregation-first mechanism to understand the facet and strain dependence of surface segregation for different transition metals in SrTiO<sub>3</sub>.
 
 Your goals for the project will be to: 
-(1) explore this reaction to find unique adsorption configurations and possibly more favorable thermodynamics,
-(2) explore if the theormodynamics can be changed with functionalization of the MXenes,
-(3) explore relations between the reaction intermediates in the pathway,
-(4) compare the chemsitry of the carbide and nitride MXenes.
+(1) Explore the facet dependence for the thermodynamics of surface segregation ,
+(2) Explore if the thermodynamics can be changed by applying a tensile strain to the host lattice, and,
+(3) Identify suitable electronic structure descriptors for the segregation process
+
 
 <a name='deadlines'></a>
 
 ## Deadlines ##
-1. Show energy diagram for bare MXene on Wed April 12 on a Power Point slide (Each group)
-2. Presentation date Fri Apr 21 (Each group 15 min including presentation and Q&A. Note: Total 90 mins)
-3. Hand in a final written report: Mon 1 May at 5:00 PM
+1. Show the facet dependence of surface segregation for a single transition metal dopant in the host perovskite; in the absence of any strain (Single plot on 1 Power Point slide): <font color="red"> Wed Apr 11 </font> (Each group)
+2. Presentation date: <font color="red"> Tue Apr 24 </font> (Each group 20 min including presentation and Q&A. Note: Total 80 mins)
+3. Final written report: <font color="red"> Tue 1 May at 5:00 PM </font>
 
 <a name='calcs'></a>
 
