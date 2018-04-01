@@ -6,7 +6,7 @@ permalink: /Project_Assignments/
 
 ## Project Assignment
 
-Half of the class will be working on carbide MXenes and the other half will be working on nitride MXenes. Please confirm your assignments below:
+You will be working in groups of two or three on a given transition metal-SrTiO<sub>3</sub> system. Please confirm your assignments below:
 <style>
 table {
     width:100%;
@@ -43,34 +43,31 @@ table#t01 th    {
     <th>Group Member</th>
 </tr>
 <tr>
-    <td>Zr2C</td>
-    <td>Frey, Nathan Christopher<br>
-        Padmanabhan, Ashwin </td>
+    <td>Mo-SrTiO<sub>3</sub></td>
+    <td>Anthony Curto<br>
+        Adel Aldossari </td>
 </tr>
 <tr>
-    <td>Zr2N </td>
-    <td>Price, Chris <br>
-        Raizada, Abhishek </td>
+    <td>Rh-SrTiO<sub>3 </td>
+    <td>Satvik Gadamsetty <br>
+        Unnati Joshi </td>
+        Vidyanand Wagh </td>
+
 </tr>
 <tr>
-    <td>Nb2C</td>
-    <td>Jang, Joonbaek <br>
-    Saiprasad, Sai Aparna</td>
+    <td>Pd-SrTiO<sub>3</td>
+    <td>Robert Tannenbaum<br>
+        Larissa Woryk</td>
+        Bader Alayyoub</td>
+
 </tr>
 <tr>
-    <td>Nb2N</td>
-    <td>Sankara Raman, Abhinav <br>
-    Tang, Xiaoxin </td>
+    <td>Ag-SrTiO<sub>3</td>
+    <td>Eric Chen <br>
+    Rohit Kavassery Ramesh </td>
+    Roopal Bhatnagar </td>
+
 </tr>
-<tr>
-    <td>Mo2C</td>
-    <td>Rajaraman, Vishwanathan <br>
-    Sridhar, Sudiksha </td>
-</tr>
-<tr class="last">
-    <td>Mo2N</td>
-    <td>Johnson, Luke Rachad<br>
-    Leach, Connor</td>
-</tr>
+
 
 </table>
