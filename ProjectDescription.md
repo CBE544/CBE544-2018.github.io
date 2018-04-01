@@ -111,7 +111,8 @@ To setup and get started with the calculations, you will need to modify the pre-
 
 <center><img src="/Images/BO2-1.png" alt="bo2" style="width: 400px;"/> 
 <center><img src="/Images/AO-1.png" alt="ao" style="width: 400px;"/>
-Setting up your starting configurations</center><br>
+Setting up your starting configurations (eg. 001-BO2 top and 001-AO bottom)</center><br>
+
 
 **Task 2:**
 
