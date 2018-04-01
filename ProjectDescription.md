@@ -81,7 +81,7 @@ $WORK/CBE544/FinalProj_M-STO/tensile/clean/110/
 $WORK/CBE544/FinalProj_M-STO/tensile/clean/111/
 ...
 ```
-For the Final Project, create a `FinalProj_M-STO` folder (M is the transition metal you are assigned, please check [Assignment](https://cbe544.github.io/CBE544-2018.github.io/Project_Assignments/)) in your `CBE544` directory. For example, if you are assigned Pd, please run the following command to create the directories: 
+Create a `FinalProj_M-STO` folder (M is the transition metal you are assigned, please check [Assignment](https://cbe544.github.io/CBE544-2018.github.io/Project_Assignments/)) in your `CBE544` directory. For example, if you are assigned Pd, please run the following command to create the directories: 
 
 ```bash
 cd work
