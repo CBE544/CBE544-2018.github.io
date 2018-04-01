@@ -30,7 +30,7 @@ Supported metal catalysts have been used in applications such as catalytic conve
 
 To illustrate the idea of a regenerative 'intelligent' catalytic system, a simple schematic diagram is shown below:
 
-<center><img src="../Images/Regen-catalyst-image.jpg" alt="regen" style="width: 450px;"/>
+<center><img src="/Images/Regen-catalyst-image.jpg" alt="regen" style="width: 450px;"/>
 <br> Self-regenerating 'intelligent' catalyst (<a href="https://www.sciencedirect.com/science/article/pii/S0920586106002719">Tanaka et. al. (2006)</a>)</center>
 
 Due to the high operating pressures and temperatures required for this reaction, alternative catalysts are still needed for this process. [Medford et. al. (2015)](http://dx.doi.org/10.1016/j.jcat.2014.12.033) have suggested that the linear scaling between the dissociation energy of N<sub>2</sub> and its transition state energy prevents most catalysts from achieving a high rate. Assuming that the bond-breaking of N<sub>2</sub> is rate limiting, then traditional metal catalysts have a transition state that is too high in energy. This is illustrated in the filled contour plot below, where the turnover frequency is plotted as a function of the transition state energy of the first N<sub>2</sub> bond breaking (*E*<sub>N-N</sub>) and the dissociation energy (∆*E*<sub>diss</sub>). A catalyst would need to behave differently from these extended surfaces in order to land in a more active region of the map. 
