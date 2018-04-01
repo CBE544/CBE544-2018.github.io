@@ -12,7 +12,7 @@ permalink: /Project/
 5. [Final Report](#report)
 
 
-For the Final Project, you will be studying trends in the surface segregation energetics of transition metals doped in a host perovskite oxide (SrTiO<sub>3</sub>), and delineate the facet and strain effects on the segregation behavior. The end goal is to use the segregation trends in gaining mechanistic insights into the process of Exsolution. You will be working in groups of two or three on a unique transition metal-SrTiO<sub>3</sub> combination, performing calculations individually, but complementing one another. Each group will present their results in class and be critiqued by their peers. Finally, each group will jointly write a final report, due on <font color="red"> May 1 at 5:00 PM (hard deadline)</font>.
+For the Final Project, you will be studying trends in the surface segregation energetics of transition metals doped in a host perovskite oxide (SrTiO<sub>3</sub>), and delineate the facet and strain effects on the segregation behavior. The end goal is to use the segregation trends in gaining mechanistic insights into the process of Exsolution. You will be working in groups of two or three on a unique transition metal-SrTiO<sub>3</sub> combination, performing calculations individually, but complementing one another. Each group will present their results in class and be critiqued by their peers. Finally, each group will jointly write a final report, due on <font color="red">May 1 at 5:00 PM (hard deadline)</font>.
 
 Please make use of the [Piazza](https://piazza.com/) page for troubleshooting, discussions and for sharing results.
 
