@@ -50,21 +50,21 @@ table#t01 th    {
 <tr>
     <td>Rh-SrTiO<sub>3 </td>
     <td>Satvik Gadamsetty <br>
-        Unnati Joshi </td>
+        Unnati Joshi 
         Vidyanand Wagh </td>
 
 </tr>
 <tr>
     <td>Pd-SrTiO<sub>3</td>
     <td>Robert Tannenbaum<br>
-        Larissa Woryk</td>
+        Larissa Woryk
         Bader Alayyoub</td>
 
 </tr>
 <tr>
     <td>Ag-SrTiO<sub>3</td>
     <td>Eric Chen <br>
-    Rohit Kavassery Ramesh </td>
+    Rohit Kavassery Ramesh 
     Roopal Bhatnagar </td>
 
 </tr>
