@@ -59,67 +59,66 @@ Your goals for the project will be to:
 
 ## Calculations ##
 
-For the Final Project, create a `FinalProj_M2X` folder (M2X is the material you are assigned, please check [Assignment](https://cbe544.github.io/Project_Assignments/)) in your `CBE544` directory. For example, if you are assignemnt with Mo2C, please run the following command to create the directories: 
-
-```bash
-cdw
-cd CBE544
-mkdir FinalProj_Mo2C 
-```
-Please change Mo2C in the above command to the one you are assgined. 
-
-You may run the exercises in any directory (as long as it is under `$WORK`), but keep all the final files for the project organized.
-
-To describe the full reaction on your catalytic system, you will need to calculate the adsorption energies of all intermediates, in their most stable configuration (N\*, NH\*, NH<sub>2</sub>\*, NH<sub>3</sub>\*, H\*). A mean field approximation can be used in the analysis (*e.g.* ∆*E*<sub>2NH</sub> = 2∆*E*<sub>NH</sub>). You are not required to calculate any of the transition states for this assignment. Instead use the universal BEP relations for N<sub>2</sub> dissociation.
-
-First, download and unarchive the files you need via:
-
-```bash
-wget https://github.com/CBE544/CBE544.github.io/raw/master/Final_Project.tar.gz
-tar -zxvf Final_Project.tar.gz
-```
-
-This will create a directory named `Class`. Within, you will find pre-relaxed .traj files for the project. Your team will need the bare, O-terminated, and H-terminated MXenes. They are labeled as M2X.traj for the bare, M2XO2.traj for the O-terminated, and M2XH2.traj for the H-terminated; e.g. for Mo<sub>2</sub>C, the .traj file is Mo2C.traj for the bare MXene, Mo2CO2.traj for the O-terminated, and Mo2CH2.traj for the H-terminated.
-
-In summary:
-
-1. Structural relaxations on both the bare MXene and the two functionalized MXenes; that is, O-terminated and H-terminated. 
-2. Adsorption energies for the intermediates in the adsorbed state (N\*, NH\*, NH<sub>2</sub>\*, NH<sub>3</sub>\*, H\*). Check all possible sites in order to determine optimal adsorption configurations. 
-3. Energy diagrams for the overall reaction.
-<!--4. Calculation of the reaction rate and also a free energy diagram with some temperature and pressure dependence. [Project Part 3](../ASE/Transition_States)-->
-
 **IMPORTANT:**
 
-When you have finished all your calculations. Confirm that your results are organized in the following way:
+Before starting any calculations for the project, please make note of the naming convention to be used (This is to be strictly followed to have your projects properly graded).
+
+All calculations will be run in their corresponding directories within  ` $WORK/CBE544/` following the naming convention outlined below:
 
 ```bash
-$WORK/CBE544/FinalProj_M2X/bare/
-$WORK/CBE544/FinalProj_M2X/bare/cleansur/
-$WORK/CBE544/FinalProj_M2X/bare/Adsorption/
-$WORK/CBE544/FinalProj_M2X/bare/Adsorption/N/
-$WORK/CBE544/FinalProj_M2X/bare/Adsorption/N/config
-$WORK/CBE544/FinalProj_M2X/bare/Adsorption/NH/
-$WORK/CBE544/FinalProj_M2X/bare/Adsorption/NH/config
+$WORK/CBE544/FinalProj_M-STO/no-strain/sub-surf/001-AO/
+$WORK/CBE544/FinalProj_M-STO/no-strain/sub-surf/001-BO2/
+$WORK/CBE544/FinalProj_M-STO/no-strain/sub-surf/110/
+$WORK/CBE544/FinalProj_M-STO/no-strain/sub-surf/111/
+$WORK/CBE544/FinalProj_M-STO/no-strain/surf/001-AO/
+$WORK/CBE544/FinalProj_M-STO/no-strain/surf/001-BO2/
+$WORK/CBE544/FinalProj_M-STO/no-strain/surf/110/
+$WORK/CBE544/FinalProj_M-STO/no-strain/surf/111/
 ...
-$WORK/CBE544/FinalProj_M2X/O-term/
-$WORK/CBE544/FinalProj_M2X/O-term/cleansur/
-$WORK/CBE544/FinalProj_M2X/O-term/Adsorption/
-$WORK/CBE544/FinalProj_M2X/O-term/Adsorption/N/
-$WORK/CBE544/FinalProj_M2X/O-term/Adsorption/N/config
-$WORK/CBE544/FinalProj_M2X/O-term/Adsorption/NH/
-$WORK/CBE544/FinalProj_M2X/O-term/Adsorption/NH/config
-...
-$WORK/CBE544/FinalProj_M2X/H-term/
-$WORK/CBE544/FinalProj_M2X/H-term/cleansur/
-$WORK/CBE544/FinalProj_M2X/H-term/Adsorption/
-$WORK/CBE544/FinalProj_M2X/H-term/Adsorption/N/
-$WORK/CBE544/FinalProj_M2X/H-term/Adsorption/N/config
-$WORK/CBE544/FinalProj_M2X/H-term/Adsorption/NH/
-$WORK/CBE544/FinalProj_M2X/H-term/Adsorption/NH/config
+$WORK/CBE544/FinalProj_M-STO/tensile/clean/001-AO/
+$WORK/CBE544/FinalProj_M-STO/tensile/clean/001-BO2/
+$WORK/CBE544/FinalProj_M-STO/tensile/clean/110/
+$WORK/CBE544/FinalProj_M-STO/tensile/clean/111/
 ...
 ```
+For the Final Project, create a `FinalProj_M-STO` folder (M is the transition metal you are assigned, please check [Assignment](https://cbe544.github.io/CBE544-2018.github.io/Project_Assignments/)) in your `CBE544` directory. For example, if you are assigned Pd, please run the following command to create the directories: 
 
-You should rename `config` to describe the binding configuration, such as `fcc`, `hcc`, `top`, `bridge` sites. You should have one calculation per directory.
+```bash
+cd work
+cd CBE544
+mkdir FinalProj_Pd-STO 
+```
+Please change Pd in the above command to the one you are assgined. 
+
+**Task 1:**
+
+Your first task in this project is to get the facet dependence of surface segregation for the transition metal you are assigned, in the absence of any strain. Since the low Miller index surfaces are the ones typically exposed, you will be considering the (001), (110) and (111) surfaces of SrTiO<sub>3</sub>. Note that the (001) facet has two surface terminations in a perovskite oxide (ABO<sub>3</sub>), i.e. either AO terminated or BO<sub>2</sub> terminated. In this project, you will be considering both the terminations. 
+
+To model segregation, you will be replacing one 'B-site' atom (in this case one Ti atom) with the transiton metal assigned to you, in (i) the sub-surface layer and (ii) the surface layer for each of the different facets. You will then perform a geometry optimization calculation to get the total energy of the relaxed structure in each case. Once you obtain this, the segregation energy is simply defined as: ∆*E*<sub>seg</sub> = E*<sub>surface</sub>-E*<sub>sub-surface</sub>.
+
+For Task 1, we have already provided you with pre-relaxed trajectories of SrTiO<sub>3</sub> in the different facets, which you will use to setup and perform your calculations. For the next task which involves understanding the effects of strain on the segregation behavior, you will develop your own script for generating the bulk-terminated surfaces.
+
+To start with this Task, first, download and unarchive the files you need, via:
+
+```bash
+wget https://github.com/CBE544/CBE544.github.io/raw/master/Project.tar.gz
+tar -zxvf Project.tar.gz
+```
+
+This will create a directory named `Project`. Within, you will find pre-relaxed .traj files of the different surfaces of clean SrTiO<sub>3</sub>, which you will need for this task (They are named sto-'facet'.traj for the corresponding facets). You will also find a `relax.py` script and a submission script `spede_esp.sub` for submitting your calculation. (Please use the current `relax.py` and `spede_esp.sub` scripts provided with the Project and not something you used previously)
+
+To setup and get started with the calculations, you will need to modify the pre-relaxed .traj files provided to you by replacing one Ti atom in (i) the sub-surface layer and (ii) the surface layer for each of the different facets, with the transition metal assigned to you, using the GUI. As an example, take a look at the 001-BO2 and 001-AO surfaces shown below:
+
+<center><img src="/Images/BO2.pdf" alt="bo2" style="width: 400px;"/> <br>
+<center><img src="/Images/AO.pdf" alt="ao" style="width: 400px;"/>
+<br> Setting up your starting configurations</center>
+
+**Task 2:**
+Coming Soon. Follow this space for more information.
+
+**Task 3:**
+Coming Soon. Follow this space for more information.
+
 
 <a name='analysis'></a>
 
