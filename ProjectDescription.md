@@ -109,14 +109,18 @@ This will create a directory named `Project`. Within, you will find pre-relaxed 
 
 To setup and get started with the calculations, you will need to modify the pre-relaxed .traj files provided to you by replacing one Ti atom in (i) the sub-surface layer and (ii) the surface layer for each of the different facets, with the transition metal assigned to you, using the GUI. As an example, take a look at the 001-BO2 and 001-AO surfaces shown below:
 
-<center><img src="/Images/BO2-1.png" alt="bo2" style="width: 400px;"/> <br>
+<center><img src="/Images/BO2-1.png" alt="bo2" style="width: 400px;"/> 
 <center><img src="/Images/AO-1.png" alt="ao" style="width: 400px;"/>
 <br> Setting up your starting configurations</center>
 
+
 **Task 2:**
+
 Coming Soon. Follow this space for more information.
 
+
 **Task 3:**
+
 Coming Soon. Follow this space for more information.
 
 
