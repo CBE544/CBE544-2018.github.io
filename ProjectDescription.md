@@ -33,10 +33,10 @@ To illustrate the idea of a regenerative 'intelligent' catalytic system, a simpl
 <center><img src="/Images/Regen-catalyst-image.jpg" alt="regen" style="width: 450px;"/>
 <br> Self-regenerating 'intelligent' catalyst (<a href="https://www.sciencedirect.com/science/article/pii/S0920586106002719">Tanaka et. al. (2006)</a>)</center>
 
-Current research has foused on trying to understand the mechanism behind the exsolution process, and also develop broader trends in identifying suitable transition metal-host perovksite combinations. Among some of the proposed mechanisms, ([Tae-Sik Oh et. al. (2015)])(https://www.nature.com/articles/nature00893)
+Current research has foused on trying to understand the mechanism behind the exsolution process, and also develop broader trends in identifying suitable transition metal-host perovksite combinations. Some of the proposed mechanisms include su-surface nucleation of metal nanoparticles followed by segregation [Tae-Sik Oh et.al. (2015)](https://pubs.acs.org/doi/full/10.1021/acs.jpclett.5b02292) or surface segregation followed by sintering and particle growth [Katz et.al. (2011)](https://pubs.acs.org/doi/abs/10.1021/ja2082284). The two schemes are illustrated below:
 
-<center><img src="../Images/N2_volcano.png" alt="N2 volcano" style="width: 400px;"/>
-<br>Filled contour plot for the turnover frequencies (Singh et. al. (2016))</center>
+<center><img src="/Images/mechanism.png" alt="mechanism" style="width: 400px;"/>
+<br> Possible mechanisms for exsolution </center>
 
 We will be exploring 2D MXenes where such configurations might be found. 
 
