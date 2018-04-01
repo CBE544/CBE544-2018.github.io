@@ -48,21 +48,21 @@ table#t01 th    {
         Adel Aldossari </td>
 </tr>
 <tr>
-    <td>Rh-SrTiO<sub>3 </td>
+    <td>Rh-SrTiO<sub>3</sub> </td>
     <td>Satvik Gadamsetty <br>
         Unnati Joshi <br>
         Vidyanand Wagh </td>
 
 </tr>
 <tr>
-    <td>Pd-SrTiO<sub>3</td>
+    <td>Pd-SrTiO<sub>3</sub></td>
     <td>Robert Tannenbaum<br>
         Larissa Woryk <br>
         Bader Alayyoub</td>
 
 </tr>
 <tr>
-    <td>Ag-SrTiO<sub>3</td>
+    <td>Ag-SrTiO<sub>3</sub></td>
     <td>Eric Chen <br>
     Rohit Kavassery Ramesh <br>
     Roopal Bhatnagar </td>
