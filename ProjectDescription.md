@@ -12,43 +12,26 @@ permalink: /Project/
 5. [Final Report](#report)
 
 
-For the Final Project, you will be studying thermo-chemical ammonia synthesis on 2D MXenes (M<sub>2</sub>X) with X = C or N. Each student will be assigned a MXene to work on either a carbide or a nitride (see list of Assigned Projects). The students will work in groups of two on the same MXene to perform calculations individually, however, complementing each other. Each pair of students will present their results in class that will be critiqued by another group of two. Finally, these four students will jointly write a final report on the combined data. The due date for the final written report is <font color="red">5/1 at 5:00 PM (hard deadline)</font>.
+For the Final Project, you will be studying trends in the surface segregation energetics of transition metals doped in a host perovskite oxide (SrTiO<sub>3), and delineate the facet and strain effects on the segregation behavior. The end goal is to use the segregation trends in gaining mechanistic insights into the process of Exsolution. You will be working in groups of two or three on a unique transition metal-SrTiO<sub>3 combination, performing calculations individually, but complementing one another. Each group will present their results in class and be critiqued by their peers. Finally, each group will jointly write a final report, due on <font color="red"> May 1 at 5:00 PM (hard deadline)</font>.
 
 Please make use of the [Piazza](https://piazza.com/) page for troubleshooting, discussions and for sharing results.
 
 Turn in your final report by emailing a PDF file to:
 
 ```
-alevoj@seas.upenn.edu, liangzha@seas.upenn.edu
+alevoj@seas.upenn.edu, sanraman@seas.upenn.edu
 ```
 
 <a name='intro'></a>
 
 ## Introduction ##
 
-The thermo-chemical synthesis of ammonia is accomplished through the [Haber-Bosch process](http://en.wikipedia.org/wiki/Haber_process), where nitrogen gas reacts with hydrogen gas via:
+Supported metal catalysts have been used in applications such as catalytic converters in automotive exhaust systems, but pose the issue of particle coarsening/growth, coking etc. which reduce their active lifetime. To circumvent this problem, resarchers at [Daihatsu and Toyota](https://www.nature.com/articles/nature00893) proposed the idea of exsolving metal nanoparticles from a host perovskite, and reversibly re-dispersing it back into the host lattice under reducing and oxidizing conditions respectively. This synthesis method involving exsolution has emerged as a new promising alternative to overcome some of the limitations posed by conventional supported metal catalysts and is an active area of research.
 
-$$
-\mathrm{N_2+3H_2\rightarrow 2NH_3}
-$$
+To illustrate the idea of a regenerative 'intelligent' catalytic system, a simple schematic diagram is shown below:
 
-This process is crucial for the industrial production of fertilizers and chemical feedstocks. Typically, an iron catalyst is used to stabilize the bond-breaking of the N<sub>2</sub> species. The reaction can be separated into elementary reaction steps ([Honkala et. al. (2005)](http://dx.doi.org/10.1126/science.1106435) for more details):
-
-$$
-\begin{align}
-\mathrm{N_{2\,(g)}} &\rightarrow \mathrm{2N*}\\
-\mathrm{H_{2\,(g)}} &\rightarrow \mathrm{2H*}\\
-\mathrm{N* + H*} &\rightarrow \mathrm{NH*}\\
-\mathrm{NH* + H*} &\rightarrow \mathrm{NH_2*}\\
-\mathrm{NH_2* + H*} &\rightarrow \mathrm{NH_3*}\\
-\mathrm{NH_3*} &\rightarrow \mathrm{NH_{3\,(g)}}
-\end{align}
-$$
-
-A free energy diagram is illustrated below:
-
-<center><img src="../Images/N2_path.jpg" alt="N2 path" style="width: 450px;"/>
-<br>Ammonia synthesis pathway on a Ru catalyst (<a href="http://dx.doi.org/10.1126/science.1106435">Honkala et. al. (2005)</a>)</center>
+<center><img src="../Images/Regen-catalyst-image.jpg" alt="regen" style="width: 450px;"/>
+<br> Self-regenerating 'intelligent' catalyst (<a href="https://www.sciencedirect.com/science/article/pii/S0920586106002719">Tanaka et. al. (2006)</a>)</center>
 
 Due to the high operating pressures and temperatures required for this reaction, alternative catalysts are still needed for this process. [Medford et. al. (2015)](http://dx.doi.org/10.1016/j.jcat.2014.12.033) have suggested that the linear scaling between the dissociation energy of N<sub>2</sub> and its transition state energy prevents most catalysts from achieving a high rate. Assuming that the bond-breaking of N<sub>2</sub> is rate limiting, then traditional metal catalysts have a transition state that is too high in energy. This is illustrated in the filled contour plot below, where the turnover frequency is plotted as a function of the transition state energy of the first N<sub>2</sub> bond breaking (*E*<sub>N-N</sub>) and the dissociation energy (∆*E*<sub>diss</sub>). A catalyst would need to behave differently from these extended surfaces in order to land in a more active region of the map. 
 
@@ -136,97 +119,25 @@ $WORK/CBE544/FinalProj_M2X/H-term/Adsorption/NH/config
 
 You should rename `config` to describe the binding configuration, such as `fcc`, `hcc`, `top`, `bridge` sites. You should have one calculation per directory.
 
-**Access Your Teammate's directory:**
-
-The following path contains the paths to your teammate's directory, 
-```bash
-/home1/03672/tg829713/lnk_CBE544
-```
-
-You can create a link of the above path so that you can easily access it in the future. Be sure to change M2X to the material you are assigned
-
-```bash
-ln -s /home1/03672/tg829713/lnk_CBE544/M2X FPteam
-```
-
 <a name='analysis'></a>
 
 ## Analysis ##
-Your analysis abd final report should include the following:
 
-1. Structures of bare MXenes and the H- and O-terminated MXenes.
-2. Adsorption energies and structures for all intermediates in the adsorbed state (N\*, NH\*, NH<sub>2</sub>\*, NH<sub>3</sub>\*, H\*) on the bare and the two functionalized Mxenes. Determine what is the optimal reaction site for each system. Discussion of the optimal binding configurations on the surface.
-3. Energy diagrams for the overall reaction for bare, O- and H-terminated Mxenes. Preferably combined in one figure for easy comparison. Comparison between the different systems.
-4. Establish scaling relations between intermediates.
-5. Calculate the reaction rate of the systems you've studied with using the following assumptions:
+Your analysis and final report should include the following:
 
-    a. Single active site model
-    
-    b. N<sub>2</sub> dissociation is rate determining step
-    
-    c. TS of N<sub>2</sub> dissociation follows the universal BEP relation (see Eqs. on page 93 in "Fundamental Concepts in Heterogenous Catalysis" by Nørskov et al.) for either close-packed or stepped surfaces. Please motivate your choice(s) for the different systems.
+1. Structures of the different facets of  ‘M’-SrTiO3; where ‘M’ is the transition metal assigned to your group.
+2. Tabulated surface segregation energy for the different facets in the absence and presence of strain.
+3. Surface segregation energy vs Facet plot; in the absence and presence of strain
+4. Electronic structure descriptors; Work function and Density of States
 
-    d. Use the following total energies for N2, H2, and NH3:
-    ```
-        N2:  -555.10 eV
-        H2: -32.94 eV 
-        NH3: -327.72 eV
-    ```
-    e. The ZPE corrections should be assumed to be negligable
-    
-    d. Entropies of gas phase molecules should be taken as the experimental values from [NIST](http://webbook.nist.gov/cgi/cbook.cgi?ID=C7727379&Mask=1). Please keep in mind that entropy is a function of temperature. 
 
 <a name='report'></a>
 
 ## Final Report ##
 
-The final report should be in the form of a 3-5 pages long mini paper including figures and tables. One report for each group of 4 people formed according to the metal of the Mxene. Please be succinct and organize it in the following way:
+The final report should be in the form of a 3-5 pages long mini paper including figures and tables. One report for each group. Please be succinct and organize it in the following way:
 
 * Introduction (brief) - don't write too much
 * Calculation details
 * Results and discussion
 * Conclusion (brief)
-
-**Archieve Calculations:**
-
-Under your final project directory, please create a folder named `opt-sites`, and then put everything there in an organized way: For each stable sites, please create a folder `X-Y-Z`, and put corresponding `.traj` and `ll_out` (use the last one if you have multiple runs) in the folder. 
-
-* X is termination: `bare`, `H`, `O`
-* Y is adsorbate: `H`, `N`, `NH`, `NH2`, `NH3`
-* Z is adsorption site of the final geometry: `hcp`, `top`, `fcc`
-
-
-
-<!--
-
-
-
-You are welcome to share data amongst your peers to discuss broader trends. 
-
-**If you need the energy of the fixed clusters, they are available [here](../Fixed_Lattice_Clusters/energies.txt).**
-
-<a name='grading'></a>
-
-## Grading ##
-
-* 30% exercises
-* 20% write-up
-* 20% kinetics
-* 30% calculations
-
-<a name='reqs'></a>
-
-## Requirements ##
-
-At a minimum you should accomplish the following:
-
-1. Complete the [three exercises](../ASE/).
-2. Setup a M<sub>13</sub> cluster and a (111) surface and calculate adsorption energies for all intermediates.
-3. Calculate transition states for the first step N<sub>2</sub> dissociation) using the fixed bond-length method. Extra credit for calculating the hydrogenation barriers.
-4. Vibrational frequency and free energy calculations (initial, transition, and final states, and all adsorbed intermediates). 
-5. Analysis
-    1. Optimal adsorption sites (relation to transition states)
-    2. Kinetic rate analysis
-6. Report (3~5 pages maximum)
-
--->
