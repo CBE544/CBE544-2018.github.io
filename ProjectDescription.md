@@ -49,7 +49,7 @@ Your goals for the project will be to:
 ## Deadlines ##
 1. Show the facet dependence of surface segregation for a single transition metal dopant in the host perovskite; in the absence of any strain (Single plot on 1 Power Point slide): <font color="red"> Wed Apr 11 </font> (Each group)
 2. Presentation date: <font color="red"> Tue Apr 24 </font> (Each group 20 min including presentation and Q&A. Note: Total 80 mins)
-3. Final written report: <font color="red"> Tue 1 May at 5:00 PM </font>
+3. Final written report: <font color='red'> Tue 1 May at 5:00 PM </font>
 
 <a name='calcs'></a>
 
@@ -59,7 +59,7 @@ Your goals for the project will be to:
 
 Before starting any calculations for the project, please make note of the naming convention to be used (This is to be strictly followed to have your projects properly graded).
 
-All calculations will be run in their corresponding directories within  ` $WORK/CBE544/` following the naming convention outlined below:
+All calculations will be run in their corresponding directories within `$WORK/CBE544/` following the naming convention outlined below:
 
 ```bash
 $WORK/CBE544/FinalProj_M-STO/no-strain/sub-surf/001-AO/
