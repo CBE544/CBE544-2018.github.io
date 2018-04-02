@@ -101,7 +101,7 @@ For Task 1, we have already provided you with pre-relaxed trajectories of SrTiO<
 To start with this Task, first, download and unarchive the files you need, via:
 
 ```bash
-wget https://github.com/CBE544/CBE544.github.io/raw/master/Project.tar.gz
+wget https://cbe544.github.io/CBE544-2018.github.io/ASE/Project.tar.gz
 tar -zxvf Project.tar.gz
 ```
 
@@ -113,6 +113,7 @@ To setup and get started with the calculations, you will need to modify the pre-
 <center><img src="/Images/AO-1.png" alt="ao" style="width: 400px;"/>
 Setting up your starting configurations (eg. top: 001-BO2 and bottom: 001-AO)</center><br>
 
+<font color="red"> Wed Apr 11 </font>: Once you complete all the optimization calculations, write a simple Python script to generate a plot of ∆*E*<sub>seg</sub> vs Facets (you may make use of the plot setup used in the kptconv.py script from HW5). Report this plot on a single Powerpoint slide.
 
 **Task 2:**
 
