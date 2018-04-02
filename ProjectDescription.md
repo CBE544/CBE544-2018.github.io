@@ -47,11 +47,7 @@ Your goals for the project will be to:
 <a name='deadlines'></a>
 
 ## Deadlines ##
-1. Show the facet dependence of surface segregation for a single transition metal dopant in the host perovskite; in the absence of any strain (Single plot on 1 Power Point slide): 
-```diff
-testing
-```
-<font color="red"> Wed Apr 11 </font> (Each group)
+1. Show the facet dependence of surface segregation for a single transition metal dopant in the host perovskite; in the absence of any strain (Single plot on 1 Power Point slide): <font color="red"> Wed Apr 11 </font> (Each group)
 2. Presentation date: <font color="red"> Tue Apr 24 </font> (Each group 20 min including presentation and Q&A. Note: Total 80 mins)
 3. Final written report: <font color='red'> Tue 1 May at 5:00 PM </font>
 
