@@ -36,12 +36,6 @@ To illustrate the idea of a regenerative 'intelligent' catalytic system, a simpl
 
 Current research has foused on trying to understand the mechanism behind the exsolution process, and also develop broader trends in identifying suitable transition metal-host perovksite combinations. Some of the proposed mechanisms include sub-surface nucleation of metal nanoparticles followed by segregation ([Tae-Sik Oh et.al. (2015)](https://pubs.acs.org/doi/full/10.1021/acs.jpclett.5b02292)) or surface segregation followed by sintering and particle growth ([Katz et.al. (2011)](https://pubs.acs.org/doi/abs/10.1021/ja2082284)). 
 
-%The two schemes are illustrated below:
-
-%<center><img src="/Images/mechanism.png" alt="mechanism" style="width: 400px;"/>
-%<br> Possible mechanisms for exsolution </center>
-
-
 In this project, you will be exploring the segregation-first mechanism to understand the facet and strain dependence of surface segregation for different transition metals in SrTiO<sub>3</sub>.
 
 Your goals for the project will be to: 
