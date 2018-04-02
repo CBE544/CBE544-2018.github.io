@@ -113,7 +113,7 @@ To setup and get started with the calculations, you will need to modify the pre-
 <center><img src="/Images/AO-1.png" alt="ao" style="width: 400px;"/>
 Setting up your starting configurations (eg. top: 001-BO2 and bottom: 001-AO)</center><br>
 
-<font color="red"> Wed Apr 11 </font>: Once you complete all the optimization calculations, write a simple Python script to generate a plot of ∆*E*<sub>seg</sub> vs Facets. Report this plot on a single Powerpoint slide. (Hint: The [Pyplot module] (https://matplotlib.org/api/pyplot_summary.html) may come in handy when writing the plotting script)
+<font color="red"> Wed Apr 11 </font>: Once you complete all the optimization calculations, write a simple Python script to generate a plot of ∆*E*<sub>seg</sub> vs Facets. Report this plot on a single Powerpoint slide. (Hint: The [Pyplot module](https://matplotlib.org/api/pyplot_summary.html) may come in handy when writing the plotting script)
 
 **Task 2:**
 
