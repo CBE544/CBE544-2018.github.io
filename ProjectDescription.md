@@ -103,7 +103,7 @@ tar -zxvf Project.tar.gz
 
 This will create a directory named `Project`. Inside, you will find all of the pre-relaxed .traj files of the different clean  SrTiO<sub>3</sub> surfaces, which you will need for this task. They are named sto-'facet'.traj for the corresponding facets. You will also find a `relax.py` script and a submission script `spede_esp.sub` for submitting your calculations. Please use the current `relax.py` and `spede_esp.sub` scripts provided with the Project and not something you used previously.
 
-To setup and get started with the calculations, you will need to modify the pre-relaxed .traj files provided to you by replacing one Ti atom of the SrTiO<sub>3</sub> system either in (i) the sub-surface layer or (ii) the surface layer for each of the different facets, with the transition metal assigned to you, using the GUI or ASE commands. As an example, take a look at the 001-BO2 and 001-AO surfaces shown below:
+To setup and get started with the calculations, you will need to modify the pre-relaxed .traj files provided to you by replacing one Ti atom of the SrTiO<sub>3</sub> system either in (i) the sub-surface layer or (ii) the surface layer for each of the different facets, with the transition metal assigned to you, using the GUI or by writing a python script with ASE commands. As an example, take a look at the 001-BO2 and 001-AO surfaces shown below:
 
 <center><img src="/Images/BO2-1.png" alt="bo2" style="width: 400px;"/> 
 <center><img src="/Images/AO-1.png" alt="ao" style="width: 400px;"/>
