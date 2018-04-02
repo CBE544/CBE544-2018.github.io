@@ -34,18 +34,20 @@ To illustrate the idea of a regenerative 'intelligent' catalytic system, a simpl
 <br> Self-regenerating 'intelligent' catalyst (<a href="https://www.sciencedirect.com/science/article/pii/S0920586106002719">Tanaka et. al. (2006)</a>)</center>
 
 
-Current research has foused on trying to understand the mechanism behind the exsolution process, and also develop broader trends in identifying suitable transition metal-host perovksite combinations. Some of the proposed mechanisms include sub-surface nucleation of metal nanoparticles followed by segregation ([Tae-Sik Oh et.al. (2015)](https://pubs.acs.org/doi/full/10.1021/acs.jpclett.5b02292)) or surface segregation followed by sintering and particle growth ([Katz et.al. (2011)](https://pubs.acs.org/doi/abs/10.1021/ja2082284)). The two schemes are illustrated below:
+Current research has foused on trying to understand the mechanism behind the exsolution process, and also develop broader trends in identifying suitable transition metal-host perovksite combinations. Some of the proposed mechanisms include sub-surface nucleation of metal nanoparticles followed by segregation ([Tae-Sik Oh et.al. (2015)](https://pubs.acs.org/doi/full/10.1021/acs.jpclett.5b02292)) or surface segregation followed by sintering and particle growth ([Katz et.al. (2011)](https://pubs.acs.org/doi/abs/10.1021/ja2082284)). 
 
-<center><img src="/Images/mechanism.png" alt="mechanism" style="width: 400px;"/>
-<br> Possible mechanisms for exsolution </center>
+%The two schemes are illustrated below:
+
+%<center><img src="/Images/mechanism.png" alt="mechanism" style="width: 400px;"/>
+%<br> Possible mechanisms for exsolution </center>
 
 
 In this project, you will be exploring the segregation-first mechanism to understand the facet and strain dependence of surface segregation for different transition metals in SrTiO<sub>3</sub>.
 
 Your goals for the project will be to: 
-(1) Explore the facet dependence for the thermodynamics of surface segregation ,
+(1) Explore the facet dependence for the thermodynamics of surface segregation,
 (2) Explore if the thermodynamics can be changed by applying a tensile strain to the host lattice, and,
-(3) Identify suitable electronic structure descriptors for the segregation process
+(3) Identify suitable electronic structure descriptors for the segregation process.
 
 
 <a name='deadlines'></a>
@@ -94,20 +96,20 @@ Please change Pd in the above command to the one you are assgined.
 
 Your first task in this project is to get the facet dependence of surface segregation for the transition metal you are assigned, in the absence of any strain. Since the low Miller index surfaces are the ones typically exposed, you will be considering the (001), (110) and (111) surfaces of SrTiO<sub>3</sub>. Note that the (001) facet has two surface terminations in a perovskite oxide (ABO<sub>3</sub>), i.e. either AO terminated or BO<sub>2</sub> terminated. In this project, you will be considering both the terminations. 
 
-To model segregation, you will be replacing one 'B-site' atom (in this case one Ti atom) with the transiton metal assigned to you, in (i) the sub-surface layer and (ii) the surface layer for each of the different facets. You will then perform a geometry optimization calculation to get the total energy of the relaxed structure in each case. Once you obtain this, the segregation energy is simply defined as: ∆*E*<sub>seg</sub> = E<sub>surface</sub>-E<sub>sub-surface</sub>.
+To model segregation, you will be replacing one 'B-site' atom (in this case one Ti atom) with the transiton metal assigned to you, in (i) the sub-surface layer and (ii) the surface layer for each of the different facets. You will then perform a geometry optimization calculation to get the total energy of the relaxed structure in each case. Once you obtain this, the segregation energy is defined as: ∆*E*<sub>seg</sub> = E<sub>surface</sub>-E<sub>sub-surface</sub>.
 
-For Task 1, we have already provided you with pre-relaxed trajectories of SrTiO<sub>3</sub> in the different facets, which you will use to setup and perform your calculations. For the next task which involves understanding the effects of strain on the segregation behavior, you will develop your own script for generating the bulk-terminated surfaces.
+For Task 1, we have already provided you with pre-relaxed trajectories of SrTiO<sub>3</sub> in the different facets, which you will use to setup and perform your calculations. For the next task (Task 2) which involves understanding the effects of strain on the segregation behavior, you will develop your own script for generating the bulk-terminated strained surfaces.
 
-To start with this Task, first, download and unarchive the files you need, via:
+To start with Task 1, first, download and unarchive the files you need, via:
 
 ```bash
 wget https://cbe544.github.io/CBE544-2018.github.io/ASE/Project.tar.gz
 tar -zxvf Project.tar.gz
 ```
 
-This will create a directory named `Project`. Within, you will find pre-relaxed .traj files of the different surfaces of clean SrTiO<sub>3</sub>, which you will need for this task (They are named sto-'facet'.traj for the corresponding facets). You will also find a `relax.py` script and a submission script `spede_esp.sub` for submitting your calculation. (Please use the current `relax.py` and `spede_esp.sub` scripts provided with the Project and not something you used previously)
+This will create a directory named `Project`. Inside, you will find all of the pre-relaxed .traj files of the different clean  SrTiO<sub>3</sub> surfaces, which you will need for this task. They are named sto-'facet'.traj for the corresponding facets. You will also find a `relax.py` script and a submission script `spede_esp.sub` for submitting your calculations. Please use the current `relax.py` and `spede_esp.sub` scripts provided with the Project and not something you used previously.
 
-To setup and get started with the calculations, you will need to modify the pre-relaxed .traj files provided to you by replacing one Ti atom in (i) the sub-surface layer and (ii) the surface layer for each of the different facets, with the transition metal assigned to you, using the GUI. As an example, take a look at the 001-BO2 and 001-AO surfaces shown below:
+To setup and get started with the calculations, you will need to modify the pre-relaxed .traj files provided to you by replacing one Ti atom of the SrTiO<sub>3</sub> system either in (i) the sub-surface layer or (ii) the surface layer for each of the different facets, with the transition metal assigned to you, using the GUI or ASE commands. As an example, take a look at the 001-BO2 and 001-AO surfaces shown below:
 
 <center><img src="/Images/BO2-1.png" alt="bo2" style="width: 400px;"/> 
 <center><img src="/Images/AO-1.png" alt="ao" style="width: 400px;"/>
