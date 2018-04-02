@@ -127,19 +127,19 @@ Coming Soon. Follow this space for more information.
 
 Your analysis and final report should include the following:
 
-1. Structures of the different facets of  ‘M’-SrTiO3; where ‘M’ is the transition metal assigned to your group.
-2. Tabulated surface segregation energy for the different facets in the absence and presence of strain.
-3. Surface segregation energy vs Facet plot; in the absence and presence of strain
-4. Electronic structure descriptors; Work function and Density of States
+1. Atomic structures of the different facets of  ‘M’-SrTiO3; where ‘M’ is the transition metal assigned to your group.
+2. Tabulated surface segregation energy for the different facets in the absence strain and in the presence of tensile strain.
+3. Surface segregation energy vs Facet plot; in the absence and presence of strain.
+4. Potential electronic structure quantities to be considered as descriptors: Work function and/or Density of States. Discussion of how and if these suggested parameters couple to the calculated segregation energies.
 
 
 <a name='report'></a>
 
 ## Final Report ##
 
-The final report should be in the form of a 3-5 pages long mini paper including figures and tables. One report for each group. Please be succinct and organize it in the following way:
+The final report should be in the form of a 3-5 pages long mini paper including figures and tables. Provide one report for each group. Please be succinct and organize it in the following way:
 
 * Introduction (brief) - don't write too much
 * Calculation details
-* Results and discussion
+* Results and discussion including analysis.
 * Conclusion (brief)
