@@ -125,7 +125,7 @@ Coming Soon. Follow this space for more information.
 
 <a name='analysis'></a>
 
- ### Analysis ###
+ **Analysis**
 
 Your analysis and final report should include the following:
 
