@@ -90,8 +90,11 @@ Please change Pd in the above command to the one you are assgined.
 Follow these steps to continue a job that has timed out:
 
 1. Make a new directory within the directory you were originally running the job in. Call it `extend`
-  <br> For example, `mkdir extend` within `$WORK/CBE544/FinalProj_M-STO/no-strain/sub-surf/001-AO/`
+   
+   For example, `mkdir extend` within `$WORK/CBE544/FinalProj_M-STO/no-strain/sub-surf/001-AO/`
+   
 2. Copy the relevant files needed to the `extend` directory, this will include `relax.py`, `spede_esp.sub` and most importantly the trajectory from the previous run `opt.traj`. (Note: You can either copy the last frame or the full trajectory, since by default ASE reads the last frame)
+
 3. Go to the `extend` directory, i.e. `cd extend` and submit the job. Please make sure you are reading the correct starting configuration before submitting the job. This can be done by changing the file name within `relax.py` to `opt.traj` or renaming `opt.traj` to the file name provided in `relax.py`
 
 
