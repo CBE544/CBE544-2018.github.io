@@ -110,21 +110,23 @@ To setup and get started with the calculations, you will need to modify the pre-
 <br>Setting up your starting configurations (eg. top: 001-BO2 and bottom: 001-AO)</center>
 
 
-<font color="red"> Wed Apr 11 </font>: Once you complete all the optimization calculations, write a simple Python script to generate a plot of ∆*E*<sub>seg</sub> vs Facets. Report this plot on a single Power Point slide. Hint: The [Pyplot module](https://matplotlib.org/api/pyplot_summary.html) may come in handy when writing the plotting script.
+<br><font color="red"> Wed Apr 11 </font>: Once you complete all the optimization calculations, write a simple Python script to generate a plot of ∆*E*<sub>seg</sub> vs Facets. Report this plot on a single Power Point slide. Hint: The [Pyplot module](https://matplotlib.org/api/pyplot_summary.html) may come in handy when writing the plotting script.
 
-**Task 2:**
+
+<br>**Task 2:**
 
 Coming Soon. Follow this space for more information.
 
 
-**Task 3:**
+<br>**Task 3:**
 
 Coming Soon. Follow this space for more information.
 
 
 <a name='analysis'></a>
 
-## Analysis ##
+
+ ## Analysis ##
 
 Your analysis and final report should include the following:
 
