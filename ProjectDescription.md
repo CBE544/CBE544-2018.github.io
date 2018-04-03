@@ -30,7 +30,7 @@ Supported metal catalysts have been used in applications such as catalytic conve
 
 To illustrate the idea of a regenerative 'intelligent' catalytic system, a simple schematic diagram is shown below:
 
-<center><img src="/Images/Regen-catalyst-image.jpg" alt="regen" style="width: 450px;"/>
+<center><img src="../Images/Regen-catalyst-image.jpg" alt="regen" style="width: 450px;"/>
 <br> Self-regenerating 'intelligent' catalyst (<a href="https://www.sciencedirect.com/science/article/pii/S0920586106002719">Tanaka et. al. (2006)</a>)</center>
 
 
@@ -105,9 +105,9 @@ This will create a directory named `Project`. Inside, you will find all of the p
 
 To setup and get started with the calculations, you will need to modify the pre-relaxed .traj files provided to you by replacing one Ti atom of the SrTiO<sub>3</sub> system either in (i) the sub-surface layer or (ii) the surface layer for each of the different facets, with the transition metal assigned to you, using the GUI or by writing a python script with ASE commands. As an example, take a look at the 001-BO2 and 001-AO surfaces shown below:
 
-<center><img src="/Images/BO2-1.png" alt="bo2" style="width: 400px;"/> 
-<center><img src="/Images/AO-1.png" alt="ao" style="width: 400px;"/>
-<br>Setting up your starting configurations (eg. top: 001-BO2 and bottom: 001-AO)</center>
+<center><img src="../Images/BO2-1.png" alt="bo2" style="width: 400px;"/> 
+<center><img src="../Images/AO-1.png" alt="ao" style="width: 400px;"/>
+<br>Setting up your starting configurations (eg. top: 001-BO2 and bottom: 001-AO)</center></center>
 
 
 <br><font color="red"> Wed Apr 11 </font>: Once you complete all the optimization calculations, write a simple Python script to generate a plot of ∆*E*<sub>seg</sub> vs Facets. Report this plot on a single Power Point slide. Hint: The [Pyplot module](https://matplotlib.org/api/pyplot_summary.html) may come in handy when writing the plotting script.
