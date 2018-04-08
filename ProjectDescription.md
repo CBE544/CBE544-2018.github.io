@@ -128,7 +128,16 @@ To setup and get started with the calculations, you will need to modify the pre-
 **Task 2:**
 
 Coming Soon. Follow this space for more information.
+<!---* For Task 2 you will be studying the facet dependence of segregation in the presence of an in-plane tensile strain applied to the host perovskite. The host perovskites themselves are typically grown on a support with a different lattice constant, which results in a lattice mismatch. This usually induces an in-plane strain to the host perovskite. Your task is to determine the effect of this strain on the thermodynamics of segregation.  --->
 
+<!---* First, you will write a python script to generate the different bulk-terminated strained surfaces (i.e. (001)-AO terminated, (001)-BO2 terminated, (110) and (111)) of SrTiO<sub>3</sub>. In Task-2 you will consider a SrTiO<sub>3</sub> lattice with a lattice constant of 3.990 Å, which corresponds to a +1.4% in-plane tensile strain applied to the lattice. To start with this, first download the bulk structure of SrTiO<sub>3</sub> using:
+<!---* ```bash
+wget https://cbe544.github.io/CBE544-2018.github.io/ASE/SrTiO3.traj 
+```--->
+<!---* Please use this structure (which is a slightly different rendition) and not anything else you used previously in HW-5, to be consistent with the surface structures used in Task 1. Use this, the [build.surface module](https://wiki.fysik.dtu.dk/ase/ase/build/surface.html) (check out the section on Create specific non-common surfaces) and the [Atoms oject] (https://wiki.fysik.dtu.dk/ase/ase/atoms.html) to develop your script. Note that you will have to adjust the lattice constant of the bulk structure to the value given above. Also, please make sure your structure has 4 layers along the z-axis, and is centered with a vacuum space of 10 Å, when writing the script. 
+Run this script in the login node using for example ` python xyz.py `. This should give you a 1x1 cell with 4 layers that is centered with a 10 Å vacuum space. Use the GUI to repeat this structure in the x-y plane to get a 2x2x4 super-cell slab. Make sure to save the super-cell. Finally, since the surface is always in equilibrium with the bulk, apply constraints to all the atoms in the top/bottom 2 layers of the slab to mimic the bulk (this will vary depending on the termination and you can use the structures in Task-1 to get an idea). To do this you may use a python script or the GUI. If you are using the GUI use the `Constraints` option in the ` Tools ` tab. If you are writing a script, please make use of the [FixAtoms class](https://wiki.fysik.dtu.dk/ase/ase/constraints.html). Save your final structure with the applied constraints.--->
+
+<!---* Once you have the bulk-terminated strained surfaces of SrTiO<sub>3</sub>, you will first perform a geometry optimization of the plain SrTiO<sub>3</sub> surfaces. Make sure to follow the naming convention described earlier when setting up this calculation. You may make use of the ` relax.py ` and ` spede_esp.sub ` scripts you used in Task-1 for this calculation. After completing the geometry optimization of the strained SrTiO<sub>3</sub> surfaces, use the optimized structures to repeat the calculations you did for Task-1, by modifying the struture with the transition metal assigned and computing the segregation energy for the different facets.--->
 
 **Task 3:**
 
