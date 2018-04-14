@@ -142,8 +142,32 @@ Plot the segregation energies vs the different facets as in Task-1, to delinate 
 
 **Task 3:**
 
-Coming Soon. Follow this space for more information.
+<!---* For Task-3, you will be performing some basic analysis involving the electronic structure, with the aim of rationalizing the trend in the segregation energetics computed in **Task 1**. Specifically, you will be tasked with computing the density of states of the dopant transition metal in the surface and sub-surface states for each facet, to explain the specific trend in the energtics observed for the given transition metal dopant. Also, as a reference you will compute the density of states of the surface titanium (Ti) and oxygen (O) in the corresponding plain SrTiO<sub>3</sub> surfaces. For this, you can make use of the pre-relaxed trajectories of the different SrTiO<sub>3</sub> surfaces that was provided for **Task 1**.
 
+<!---*Before getting started with this task, please use the following naming convention for the density of states calculations:
+
+```bash
+$WORK/CBE544/FinalProj_M-STO/no-strain/clean/001-AO/dos/
+$WORK/CBE544/FinalProj_M-STO/no-strain/clean/001-BO2/dos/
+...
+$WORK/CBE544/FinalProj_M-STO/no-strain/sub-surf/001-AO/dos/
+$WORK/CBE544/FinalProj_M-STO/no-strain/surf/001-AO/dos/
+...
+```
+<!---* Copy the optimized trajectory that you obtained in Task-1 for each facet (both the surface and sub-surface) to the `dos` directory. Also make sure to copy the pre-relaxed trajectories of the plain SrTiO<sub>3</sub> surfaces to the relevant `dos` directory based on the naming convention outlined above . Next, you will perform a single point calculation on the optimized structure to extract the charge density which will then be used to compute the density of states. You will then plot the density of states using a simple plotting script.
+
+<!---*To get started with the calculations, first download the following:
+```bash
+wget https://cbe544.github.io/CBE544-2018.github.io/ASE/dos-calc.tar.gz 
+tar -zxvf dos-calc.tar.gz
+```
+This will create a directory called `dos-calc` which contains the following files: `dos.py` and `dosplot.py`. Use the `dos.py` script to perform the single point calculation and obtain the density of states. The density of states will be saved to a pickle file called `dos.pickle`. Before running this calculation, please make the following changes to the `spede_esp.sub` file:
+
+
+<!---*The `dosplot.py` is a generic script that reads a `dos.pickle` file and plots the projected density of states of the atom specified. You will have to append this file to read multiple `dos.pickle` files and plot the corresponding density of states of the dopant atoms, as well as the refrence Ti and O atoms for each facet on a single plot. You can run this script on the login node directly using `python dosplot.py`
+
+<!---*To summarize, your final plot for each facet should have the following:
+For eg. consider the (110) surface: Density of states of the surface Ti and O atoms of plain (110) SrTiO<sub>3</sub>, density of states of the dopant transition metal in (110) sub-surface and (110) surface. (**All for the no-strain case**)--->
 
 <a name='analysis'></a>
 
