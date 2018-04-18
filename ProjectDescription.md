@@ -170,6 +170,8 @@ The `dosplot.py` is a generic script that reads a `dos.pickle` file and plots th
 To summarize, your final plot for each facet should have the following:
 For eg. consider the (110) surface: Density of states of the dopant transition metal in (110) sub-surface and (110) surface. (**All for the no-strain case**)
 
+Finally, in your presentations please also inlude a structural analysis, i.e. compare the relaxed structure with the inital unrelaxed bulk-terminated structure to identify any potential reconstructions induced by the transition metal dopant.
+
 <a name='analysis'></a>
 
  **Analysis**
