@@ -155,7 +155,6 @@ To get started with the analysis, first download the following:
 
 ```bash
 wget https://cbe544.github.io/CBE544-2018.github.io/ASE/dosplot.py 
-tar -zxvf dos-calc.tar.gz
 ```
 The density of states will be saved to a pickle file called `dos.pickle` for each surface in the `M-STO` directories. Use the ones that are relevant to the transition metal assigned to your group. Please make sure to organize the density of states analysis following the naming convention below:
 
