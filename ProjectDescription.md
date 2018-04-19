@@ -154,10 +154,10 @@ M-STO/no-strain/surf/001-AO/
 To get started with the analysis, first download the following:
 
 ```bash
-wget https://cbe544.github.io/CBE544-2018.github.io/ASE/dos-calc.tar.gz 
+wget https://cbe544.github.io/CBE544-2018.github.io/ASE/dosplot.py 
 tar -zxvf dos-calc.tar.gz
 ```
-This will create a directory called `dos-calc` which contains the following files: `dosplot.py`, and the `M-STO` directories. The density of states will be saved to a pickle file called `dos.pickle` for each surface in the `M-STO` directories. Use the ones that are relevant to the transition metal assigned to your group. Please make sure to organize the density of states analysis following the naming convention below:
+The density of states will be saved to a pickle file called `dos.pickle` for each surface in the `M-STO` directories. Use the ones that are relevant to the transition metal assigned to your group. Please make sure to organize the density of states analysis following the naming convention below:
 
 ```bash
 $WORK/CBE544/FinalProj_M-STO/no-strain/sub-surf/001-AO/dos/
