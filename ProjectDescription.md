@@ -173,6 +173,17 @@ Finally, in your presentations please also inlude a structural analysis, i.e. co
 
 <a name='analysis'></a>
 
+**Archive Calculations**
+
+Please provide the optimized trajectories of the doped systems with tensile strain in a similar format to what was done for Task-3. (Pool everything together per group). Follow the naming convention below:
+
+```bash
+M-STO/tensile/sub-surf/001-AO/
+M-STO/tensile/surf/001-AO/
+...
+```
+Once you have the directory, zip it and share it over mail (email: sanraman@seas.upenn.edu)
+
  **Analysis**
 
 Your analysis and final report should include the following:
