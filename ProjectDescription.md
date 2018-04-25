@@ -182,7 +182,7 @@ M-STO/tensile/sub-surf/001-AO/
 M-STO/tensile/surf/001-AO/
 ...
 ```
-Once you have the directory, zip it and share it over mail (email: sanraman@seas.upenn.edu)
+Once you have the directory, zip it and share it over mail (email: `sanraman@seas.upenn.edu`)
 
  **Analysis**
 
