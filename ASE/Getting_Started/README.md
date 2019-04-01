@@ -13,15 +13,14 @@ ____
 
 ## Getting Started with DFT Calculations ##
 
-In the first exercise, we will be studying MXenes and how to determine their lattice constants, then we will be studying the interaction between the MXene and an adsorbate. For Homework 5, everyone will be studying the same system (Ti<sub>2</sub>C). For the Final Project, you will use the same structure but with different chemical composition (e.g., Mo<sub>2</sub>N instead of Ti<sub>2</sub>C).
+In the first exercise, we will be studying perovskite oxides and how to determine their lattice constants, followed by surface relaxation of the (001) surface of the perovskite. For Homework 5, everyone will be studying the same system (001) SrTiO<sub>3</sub>. For the Final Project, you will use the same perovskite but with different facets (e.g.,(110),(111) etc.).
 
 ## Contents ##
 
 1. [A Typical ASE Script](#a-typical-ase-script)
-2. [MXenes](#mxene)
-  1. [Lattice Constant Determination](#lattice-constant-determination)
-  2. [Convergence with k-points](#convergence-with-k-points)
-3. [Next Steps](#next)
+2. [Lattice Constant Determination](#lattice-constant-determination)
+3. [Convergence with k-points](#convergence-with-k-points)
+4. [Optimization](#optimization)
 
 
 <a name='a-typical-ase-script'></a>
@@ -30,31 +29,34 @@ In the first exercise, we will be studying MXenes and how to determine their lat
 
 ASE scripts can be run directly in the terminal (in the login node) or submitting to external nodes. Generally, you will be submitting jobs to external nodes and only small scripts will be run on the login node. By default, all output from any submitted script will be written *from the directory where the submission command was executed*, so make sure you are inside the calculation folder before running the submission command.
 
-There are two files that are necessary to run jobs on the Stampede cluster. The first is `spede_esp.sub`; this is the file that tells the scheduler how much time the job is allowed, how many processors it requires, and other pertinent information. First, notice the comments in the beginning. These include information such as how much time to allocate, the number of nodes required, what the names of the output and error files are, what the name of the job should be, and what your email is. 
+To start this tutorial and the exercises that follow, log on to Stampede2 and download the following:
+```bash
+wget https://cbe544.github.io/CBE544-2018.github.io/ASE/HW5.tar.gz
+tar -zxvf HW5.tar.gz
+cd HW5
+```
+
+There are two files that are necessary to run jobs on the Stampede2 cluster. The first is `spede_esp.sub`; this is the file that tells the scheduler how much time the job is allowed, how many processors it requires, and other pertinent information. First, notice the comments in the beginning. These include information such as how much time to allocate, the number of nodes required, what the names of the output and error files are, what the name of the job should be, and what your email is. 
 
 ```bash
 #!/bin/bash
 
-#SBATCH -J test        # Job Name
-#SBATCH -A TG-CHE160084 # Allocation number: Do not change this
-#SBATCH -o ll_out    # Output file name
-#SBATCH -e ll_err    # Error file name
-#SBATCH -n 16          # Total number of cores requested
-#SBATCH -p development # which queue to run in
-#SBATCH -t 00:30:00     # Run time (hh:mm:ss)
-#SBATCH --mail-user=youremail@whatever.com # Make sure to change this!!!!
-#SBATCH --mail-type=end # Emails you at the end of the job
+#SBATCH -J lattice   #Job name
+#SBATCH -o out.%j #name of stdout output file
+#SBATCH -e err.%j #name of stderr error file
+#SBATCH -p development #queue type
+#SBATCH -N 1 #no.of nodes
+#SBATCH -n 32 #no.of mpi tasks
+#SBATCH -t 02:00:00 #run time (hh:mm:ss)
+#SBATCH --mail-user=your-email@seas.upenn.edu #provide your email for notification
+#SBATCH --mail-type=end #notify when job finishes
+#SBATCH -A TG-DMR180024 #Allocation (don't change this)
 
-which pw.x
-cd $SLURM_SUBMIT_DIR
-export TMPDIR=$SLURM_SUBMIT_DIR
-echo $EPS_PSP_PATH
-export OMP_NUM_THREADS=1
-
-python Energy.py
+python lattice.py    #Python script to run
 ```
 
-Finally, the last line ```python Energy.py``` picks the script you want to run. Therefore, you need to change the name of the file depending on which script you are running.
+Finally, the last line ```python lattice.py``` picks the script you want to run. Therefore, you need to change the name of the file depending on which script you are running. We will be using this script later in this section for performing calculations to compute the lattice constant of bulk SrTiO<sub>3</sub> perovskite.
+
 
 Let's look at how a typical ASE script for geometry optimization is written. Open the `relax.py` script, which will be used in a later section to perform a simple optimization on a (001) SrTiO<sub>3</sub> slab . We import all the relevant ASE modules in for this calculation
 
@@ -167,4 +169,3 @@ The optimization step is printed in the first column, the wall clock time in the
 **HW 5:** Report the converged energy of the optimized structure. 
 
 **You must succesfully complete this task before proceeding to the Final Project**
-
