@@ -13,7 +13,7 @@ ____
 
 ## Getting Started with DFT Calculations ##
 
-In the first exercise, we will be studying perovskite oxides and how to determine their lattice constants, followed by surface relaxation of the (001) surface of the perovskite. For Homework 5, everyone will be studying the same system (001) SrTiO<sub>3</sub>. For the Final Project, you will use the same perovskite but with different facets (e.g.,(110),(111) etc.).
+In the first exercise, we will be studying lithium cobalt and how to determine their lattice constants, followed by surface relaxation of the (104) surface. For Homework 5, everyone will be studying the same system (104) LiCoO<sub>2</sub>. For the Final Project, you will use the same system but with multiple facets (104 and 001) to study ethylene carbonate adosrption.
 
 ## Contents ##
 
@@ -36,26 +36,30 @@ tar -zxvf HW5.tar.gz
 cd HW5
 ```
 
-There are two files that are necessary to run jobs on the Stampede2 cluster. The first is `spede_esp.sub`; this is the file that tells the scheduler how much time the job is allowed, how many processors it requires, and other pertinent information. First, notice the comments in the beginning. These include information such as how much time to allocate, the number of nodes required, what the names of the output and error files are, what the name of the job should be, and what your email is. 
+There are two files that are necessary to run jobs on the Chestnut cluster. The first is `vasp-ase.sub`; this is the file that tells the scheduler how much time the job is allowed, how many processors it requires, and other pertinent information. First, notice the comments in the beginning. These include information such as how much time to allocate, the number of nodes required, what the names of the output and error files are, what the name of the job should be, and what your email is. 
 
 ```bash
 #!/bin/bash
 
-#SBATCH -J lattice   #Job name
-#SBATCH -o out.%j #name of stdout output file
-#SBATCH -e err.%j #name of stderr error file
-#SBATCH -p development #queue type
-#SBATCH -N 1 #no.of nodes
-#SBATCH -n 32 #no.of mpi tasks
-#SBATCH -t 02:00:00 #run time (hh:mm:ss)
-#SBATCH --mail-user=your-email@seas.upenn.edu #provide your email for notification
-#SBATCH --mail-type=end #notify when job finishes
-#SBATCH -A TG-DMR180024 #Allocation (don't change this)
+#SBATCH -x node63,node64,node81                 #node to exclude due to problems. Do not change
+#SBATCH -p p_alevoj                             #partition to run on. do not change
+#SBATCH -N  2 #number of nodes
+#SBATCH --tasks-per-node=32                     #do not change
+#SBATCH -t 48:30:00 #time limit
+#SBATCH -J JOBNAME #job name                    #Name your job here
+#SBATCH -o out.%j #screen output                #output file name. %j is job number
+#SBATCH -e err.%j #errinfo                      #err file name
+#SBATCH --mail-user=EMAL@seas.upenn.edu         #add you email address here to be alerted when job ends
+#SBATCH --mail-type=end #notify when job finishes #mail when job ends
 
-python lattice.py    #Python script to run
+
+#export VASP_GAMMA=true
+module load ase-vasp/run        #load vasp and ase
+
+python script-name.py   #name of script to run
 ```
 
-Finally, the last line ```python lattice.py``` picks the script you want to run. Therefore, you need to change the name of the file depending on which script you are running. We will be using this script later in this section for performing calculations to compute the lattice constant of bulk SrTiO<sub>3</sub> perovskite.
+Finally, the last line ```python script-name.py``` picks the script you want to run. Therefore, you need to change the name of the file depending on which script you are running. We will be using this script later in this section for performing calculations to compute the lattice constant of bulk LiCoO<sub>2</sub>.
 
 
 Let's look at how a typical ASE script for geometry optimization is written. Open the `relax.py` script, which will be used in a later section to perform a simple optimization on a (001) SrTiO<sub>3</sub> slab . We import all the relevant ASE modules in for this calculation
